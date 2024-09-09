@@ -1,0 +1,8 @@
+uuid: bc32421e-328b-49e2-8840-0406de42dd40
+langcode: en
+status: true
+dependencies: {  }
+id: buy-button
+label: 'Buy Button'
+description: ''
+locked: false

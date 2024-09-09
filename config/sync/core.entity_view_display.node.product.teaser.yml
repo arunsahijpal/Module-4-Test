@@ -1,0 +1,41 @@
+uuid: 7ec7e0dc-3e77-4df4-8211-f6d6d62a5118
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.product.body
+    - field.field.node.product.field_category
+    - field.field.node.product.field_images
+    - field.field.node.product.field_price
+    - node.type.product
+  module:
+    - readmore
+    - user
+id: node.product.teaser
+targetEntityType: node
+bundle: product
+mode: teaser
+content:
+  body:
+    type: readmore
+    label: hidden
+    settings:
+      trim_length: 600
+      trim_on_break: true
+      show_readmore: true
+      show_readless: false
+      ellipsis: true
+      wordsafe: false
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_category: true
+  field_images: true
+  field_price: true

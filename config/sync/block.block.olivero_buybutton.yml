@@ -1,0 +1,33 @@
+uuid: 45a9d111-8215-48b8-8b26-f5369d8d283d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.buy-button
+  module:
+    - node
+    - system
+  theme:
+    - olivero
+id: olivero_buybutton
+theme: olivero
+region: content
+weight: -6
+provider: null
+plugin: 'system_menu_block:buy-button'
+settings:
+  id: 'system_menu_block:buy-button'
+  label: 'Buy Button'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      product: product
