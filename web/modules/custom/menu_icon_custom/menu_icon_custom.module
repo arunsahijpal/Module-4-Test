@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Implements hook_menu_link_alter().
+ */
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Render\Markup;
+
+/**
+ * Implements hook_page_attachments().
+ */
+function menu_icon_custom_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'menu_icon_custom/menu_icon_custom_styles';
+}
+function menu_icon_custom_menu_link_alter(&$variables) {
+  // Check if this is the menu link you want to alter.
+  // Replace 'Your Menu Item' with the menu link title or ID.
+  if ($variables['element']['#title'] == 'Your Menu Item') {
+    // Add a CSS class to the menu item.
+    $variables['element']['#attributes']['class'][] = 'custom-menu-icon';
+  }
+}
