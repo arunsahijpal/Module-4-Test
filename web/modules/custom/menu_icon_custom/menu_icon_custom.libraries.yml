@@ -1,0 +1,4 @@
+menu_icon_custom_styles:
+  css:
+    theme:
+      css/menu_icon_custom.css: {}

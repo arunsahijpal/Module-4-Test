@@ -1,0 +1,4 @@
+.custom-menu-icon a::before {
+  content: url("../images/download.png"); /* Path to your icon */
+  margin-right: 5px; /* Adjust spacing as needed */
+}

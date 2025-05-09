@@ -1,0 +1,7 @@
+name: 'Menu Icon Custom'
+type: module
+description: 'Adds custom icons to specific menu items.'
+core_version_requirement: ^8 || ^9
+package: Custom
+dependencies:
+  - drupal:menu_link_content
